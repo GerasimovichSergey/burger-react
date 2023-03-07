@@ -17,7 +17,7 @@ export function OrderGoods({ item }) {
         </p>
       </div>
 
-      <Count count={22} />
+      <Count count={1} />
 
     </li>
   )

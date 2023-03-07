@@ -16,7 +16,7 @@ export function Order() {
 
         <div className={style.wrap_list}>
           <ul className={style.list}>
-            {orderList.map(item => <OrderGoods item={item} />)}
+            {orderList.map((item, index) => <OrderGoods key={index} item={item} />)}
           </ul>
 
           <div className={style.total}>
