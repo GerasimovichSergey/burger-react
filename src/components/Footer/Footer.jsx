@@ -1,5 +1,5 @@
 import style from './Footer.module.css';
-import { Container } from '../Container/Container.jsx';
+import { Container } from '../Container/Container';
 import classNames from 'classnames';
 
 
