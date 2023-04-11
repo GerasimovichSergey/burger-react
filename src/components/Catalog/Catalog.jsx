@@ -26,13 +26,17 @@ export function Catalog() {
           <h2 className={style.title}>{category[activeCategory]?.rus}</h2>
 
           <div className={style.wrap_list}>
-            <ul className={style.list}>
-              {products.length > 0 ? products.map((item) => (
-                <li key={item.id} className={style.item}>
-                  <CatalogProduct item={item} />
-                </li>
-              )) : 'Товаров нет'}
-            </ul>
+            {products.length ? <ul className={style.list}>
+                {products.map((item) => (
+                  <li key={item.id} className={style.item}>
+                    <CatalogProduct item={item} />
+                  </li>
+                ))}
+              </ul> :
+              <p className={style.empty}>
+                Данной категории товаров сейчас нет
+              </p>}
+
           </div>
         </div>
       </Container>
